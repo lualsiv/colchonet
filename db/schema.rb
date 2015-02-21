@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150217210426) do
+ActiveRecord::Schema.define(version: 20150221032443) do
 
   create_table "rooms", force: true do |t|
     t.string   "title"
@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(version: 20150217210426) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "password_digest"
+    t.datetime "confirmed_at"
+    t.string   "confirmation_token"
   end
 
 end
